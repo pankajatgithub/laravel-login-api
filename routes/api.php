@@ -29,6 +29,7 @@ Route::namespace('Api')->group(function(){
         'middleware'=>'auth:api'
     ],function(){
         Route::get('getdata',[AuthController::class, 'getdata']);
+        Route::get('logout',[AuthController::class, 'logOut']);
     });
 
 });
